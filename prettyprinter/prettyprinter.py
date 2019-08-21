@@ -228,7 +228,8 @@ def general_identifier(s):
             if module == 'builtins':
                 return builtin_identifier(qualname)
             return identifier(qualname)
-        return identifier('{}.{}'.format(module, qualname))
+        # return identifier('{}.{}'.format(module, qualname))
+        return identifier(qualname)
     return identifier(s)
 
 
